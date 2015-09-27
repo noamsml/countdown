@@ -89,6 +89,10 @@
   function onLoad() {
     $('go').addEventListener('click', onGo);
 
+    $('date').valueAsNumber =
+      (Math.floor(Date.now() / denoms.minutes)
+       - (new Date()).getTimezoneOffset()) * denoms.minutes
+
     console.log('loaded');
   }
 
