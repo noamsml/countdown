@@ -82,3 +82,15 @@ h1 {
 form, form input {
   font-size: 20pt;
 }
+
+#done {
+  display:none;
+}
+
+#done img {
+  width: 100%;
+}
+
+#notime-flex, #nodate-flex {
+  display: none;
+}
