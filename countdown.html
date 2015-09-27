@@ -1,0 +1,78 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="countdown.css">
+  <script src='countdown.js'></script>
+  <title>Countdown</title>
+</head>
+<body onload="documentOnLoad();">
+<form id="prompt">
+<input id="name" type="text" value="Countdown" />
+<div>
+  <label for="weeks-option">Weeks</label>
+  <input type="checkbox" id="weeks-option" checked /> <br />
+
+  <label for="days-option">Days</label>
+  <input type="checkbox" id="days-option" checked /> <br />
+
+  <label for="hours-option">Hours</label>
+  <input type="checkbox" id="hours-option" checked /> <br />
+
+  <label for="minutes-option">Minutes</label>
+  <input type="checkbox" id="minutes-option" checked /> <br />
+
+  <label for="seconds-option">Seconds</label>
+  <input type="checkbox" id="seconds-option" checked />
+  <p class="date">
+    <label for="date">Date</label>
+      <input id="date" type="datetime-local" value="2015-10-20T12:00" />
+  </p>
+  <p class="go"><button id="go" type="button">Go</button></p>
+</div>
+</form>
+
+<div id="countdown">
+  <h1 id="title"></h1>
+  <div class="countdown">
+    <div id="weeks-show" class="show start">
+      <div id="weeks-display" class="display"></div>
+
+      <div class="label">Weeks</div>
+    </div>
+
+    <div id="days-show" class="show start">
+      <div id="days-display" class="display"></div>
+
+      <div class="label">Days</div>
+    </div>
+
+    <div class="spacer">
+    </div>
+
+    <div id="hours-show" class="show end">
+      <div id="hours-display" class="display"></div>
+
+      <div class="label">Hours</div>
+    </div>
+
+    <div id="hours-spacer" class="show end">
+      <div class="display">:</div>
+    </div>
+
+    <div id="minutes-show" class="show end">
+      <div id="minutes-display" class="display"></div>
+
+      <div class="label">Minutes</div>
+    </div>
+
+    <div id="minutes-spacer" class="show end">
+      <div class="display">:</div>
+    </div>
+
+    <div id="seconds-show" class="show end">
+      <div id="seconds-display" class="display"></div>
+
+      <div class="label">Seconds</div>
+    </div>
+  </div>
+</body>
+</html>
